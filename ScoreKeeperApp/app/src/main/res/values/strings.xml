@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+    <string name="HomeAppName">Football Score Keeper</string>
+    <string name="startMatchButton">Start Match</string>
+    <string name="Goal">goal !</string>
+    <string name="Shot">Shot</string>
+    <string name="ShotOnTarget">shot on target</string>
+    <string name="Foul">foul</string>
+    <string name="YellowCard">yellow card</string>
+    <string name="RedCard">red card</string>
+    <string name="Offside">offside</string>
+    <string name="EndMatch">end match and get statistics</string>
+
+</resources>

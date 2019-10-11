@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/stadium1"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HomeAppName"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/InputSection"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/InputSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        <EditText
+            android:id="@+id/team1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:hint="Enter First Team Name "
+            android:layout_marginBottom="16dp"
+
+            />
+        <EditText
+            android:id="@+id/team2_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:hint="Enter Second Team Name "
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+
+            />
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:padding="10dp"
+            android:text="@string/startMatchButton"
+            android:background="@drawable/rounded"
+            android:textStyle="bold"
+            android:onClick="GoToMatch"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
